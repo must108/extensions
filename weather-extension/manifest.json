@@ -1,0 +1,10 @@
+{
+    "name": "Weather Extension",
+    "description": "View the weather!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "weather.html",
+        "default_icon": "cloud_icon.png"
+    }
+}
