@@ -4,7 +4,9 @@ function App() {
 
   return (
     <>
-      <CityInput />
+      <div className="h-full w-full">
+        <CityInput />
+      </div>
     </>
   )
 }

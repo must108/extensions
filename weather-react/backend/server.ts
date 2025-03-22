@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/weather", async (req, res) => {
-    const city = "Orlando";
+    const city = req.query.city;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}&units=imperial`;
 
     try {
@@ -29,4 +29,4 @@ app.get("/api/weather", async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(3000, () => console.log("Server running on port 3000..."));
